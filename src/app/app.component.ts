@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'hedera-website';
+  title = 'Hedera Website';
+
+  myFunction(): void {
+    var x = document.getElementById("myTopnav")!;
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+
 }
